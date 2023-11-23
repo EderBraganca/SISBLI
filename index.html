@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<title>Sistema SISBLI</title>
+	</head>
+	<body>
+        
+		<!--Menu-->
+			<div id="texto1">
+			<h2><b><i>SISBLI - Sistema de Gestão Bibliotecária</i></b></h2>
+			</div>
+			<div class="menudropdown">
+				<nav>
+					<ul>
+						<li><a href="#" class="animacao">PRINCIPAL</a></li>
+
+						<li><a href="#" class="animacao">ACERVO</a>
+							<ul>
+								<li><a href="#" class="animacao">ARTIGOS</a></li>
+								<li><a href="#" class="animacao">JORNAIS</a></li>
+								<li><a href="#" class="animacao">LIVROS</a>
+									<ul>
+										<li><a href="#" class="animacao">CADASTRAR</a></li>
+										<li><a href="#" class="animacao">LISTAR</a></li>
+									</ul>
+								</li>
+
+								<li><a href="#" class="animacao">PERIÓDICOS</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="#" class="animacao">CLIENTES</a></li>
+
+						<li><a href="#" class="animacao">ADMINISTRAÇÃO</a></li>
+						
+						<li><a href="#" class="animacao">AJUDA</a></li>
+
+				</nav>
+			</div>
+		</div>
+	<!-- Fim do Menu-->
+        
+	<!--Inicio do formulário-->
+	<h3 id="h">CADASTRO DE LIVROS</h3>
+	<br>
+	<hr id="f">
+	<br>
+	<form>
+		<fieldset>
+			<legend><b>Informações do Livro</b></legend>
+
+			<!--------->
+
+			<br>
+			<table>
+			  <tr>
+			    <td>Título:</td>
+			    <td><input type="text" required></td>
+			    <td>SubTítulo:</td>
+			    <td><input type="text" required></td>
+			    <td>Área:</td>
+			    <td>
+			    	<select required class="select">
+						<option selected="true">[Selecione a Área de Conhecimento]</option>
+						<option>Ciências Agrárias</option>
+						<option>Ciências Biológicas</option>
+						<option>Ciências da Saúde</option>
+						<option>Ciências Exatas e da Terra</option>
+						<option>Ciências Humanas</option>
+						<option>Ciências Sociais e Aplicadas</option>
+						<option>Engenharias</option>
+						<option>Linguística, Letras e Artes</option>
+						<option>Multidisciplinar</option>
+					</select>
+				</td>
+			  </tr>
+			  <tr>
+			    <td>ISBN:</td>
+			    <td><input type="text" required></td>
+			    <td>Páginas:</td>
+			    <td><input type="text" required></td>
+			    <td>Data publicação:</td>
+			    <td><input type="text" required></td>
+			  </tr>
+			  <tr>
+			    <td>Autores:</td>
+			    <td><input type="text" required></td>
+			    <td><input type="submit" value="Incluir" id="incluir"></td>
+			    <td rowspan="2"><textarea  id="textarea"></textarea></td>
+			  </tr>
+			  <tr>
+			  	<td></td>
+			  	<td></td>
+			  	<td><input type="button" value="Excluir" name="" id="excluir"></td>
+			  </tr>
+			</table>
+			<br>
+
+		<!--------->
+
+		</fieldset>
+
+		<br>
+
+		<fieldset>
+			<legend><b>Informações do Exemplar</b></legend>
+			<br>
+
+			<!--------->
+
+			<table>
+			  <tr>
+			    <td>Editora:</td>
+			    <td><input type="text" required></td>
+			    <td>Local:</td>
+			    <td><input type="text" required></td>
+			    <td>Volume:</td>
+			    <td><input type="text" required></td>
+			  </tr>
+			  <tr>
+			    <td>Edição:</td>
+			    <td><input type="text" required></td>
+			    <td>Ano:</td>
+			    <td><input type="text" required></td>
+			    <td>Idioma:</td>
+			    <td><input type="text" required></td>
+			  </tr>
+			  <tr>
+			    <td>Data aquisição:</td>
+			    <td><input type="text" required></td>
+			    <td>Aquisição:</td>
+			    <td>
+			    	<select required class="select">
+					<option value="-1" selected="true">[Selecione a aquisição]</option>
+						<option value="">Compra</option>
+						<option value="">Doação</option>
+						<option value="">Permuta</option>
+					</select>
+			    </td>
+			    <td>Disponível:</td>
+			    <td><input type="checkbox" required checked="true" id="checkbox"></td>
+			  </tr>
+			</table>
+			<br>
+
+			<!--------->
+			
+		</fieldset>
+
+		<!--------->
+
+		<br><br>
+		<hr>
+		<input type="submit" value="Salvar" id="salvar">
+		<input type="submit" value="Listar" id="listar">
+	</form>
+
+	<!--Fim do formulário-->
+
+	</body>
+</html>
